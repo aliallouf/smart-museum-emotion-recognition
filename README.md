@@ -19,3 +19,36 @@ Our Smart Museum Emotion Recognition system includes the following key functiona
 * **IoT Dashboard Integration Potential:** The analysis script (`analyze_emotions.py`) outputs results in JSON format, making it readily consumable by IoT dashboards or visualization tools like Node-RED for dynamic display and further analysis.
 
 ---
+## Technologies Used
+
+This project is built using a combination of powerful tools and libraries:
+
+* **Python:** The primary programming language for all scripts.
+* **TensorFlow/Keras:** Used for building, training, and deploying the deep learning model for facial emotion recognition.
+* **OpenCV (`cv2`):** Essential for real-time video stream processing, face detection (using Haar Cascades), and overlaying detection results.
+* **Pandas:** Utilized in `analyze_emotions.py` for efficient data manipulation and analysis of the emotion log.
+* **NumPy:** Fundamental library for numerical operations, especially array manipulation within the machine learning pipeline.
+* **Matplotlib:** (Primarily in `model.py`) for visualizing training history (loss and accuracy plots).
+* **Scikit-learn:** (Specifically `sklearn.model_selection.train_test_split` in `model.py`) for splitting data into training and testing sets.
+
+**Potential IoT Deployment Platforms:**
+While the core logic is software-based, this system is designed with deployment on IoT edge devices in mind. Potential platforms include:
+* **Raspberry Pi:** A popular low-cost, high-performance single-board computer suitable for edge AI applications.
+* **NVIDIA Jetson Series:** Powerful embedded AI computing platforms optimized for deep learning inference at the edge, ideal for more demanding real-time processing.
+
+## Installation
+
+To get a copy of this project up and running on your local machine, follow these steps.
+
+### Prerequisites
+
+* Python 3.8+ (recommended)
+* `pip` (Python package installer)
+
+### Clone the Repository
+
+First, clone the repository to your local machine using Git:
+
+```bash
+git clone [https://github.com/your-username/smart-museum-emotion-recognition.git](https://github.com/your-username/smart-museum-emotion-recognition.git)
+cd smart-museum-emotion-recognition
